@@ -1,7 +1,18 @@
 import React, { FC } from 'react';
+import sts from './App.module.css';
+import Header from './components/header/Header';
 
 const App: FC = () => {
-  return <h1>Hello world!</h1>;
+  return (
+    <main>
+      <div className={sts.layout}>
+        <section className={sts.weather}>
+          <Header />
+        </section>
+        <section className={sts.map}></section>
+      </div>
+    </main>
+  );
 };
 
 export default App;

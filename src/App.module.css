@@ -1,0 +1,23 @@
+:root {
+  --color-one: #e0e5fe;
+  --color-two: #4867F6;
+  --color-three: #2a4cde;
+  --color-four: #f8f9fe;
+  --color-five: #1434bf;
+  --sm: 4px;
+  --md: 8px;
+  --lg: 16px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+
+  .weather {
+    flex: 1 1 50%;
+  }
+
+  .map {
+    flex: 1 1 50%;
+  }
+}
