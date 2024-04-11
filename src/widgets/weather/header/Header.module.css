@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--color-three);
+  padding: var(--md) var(--lg);
+}
+
+.container {
+  display: flex;
+  gap: var(--md);
+  align-items: center;
+
+  .sorting {
+    display: flex;
+    gap: var(--sm);
+  }
+}
