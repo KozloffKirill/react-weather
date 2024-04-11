@@ -8,14 +8,20 @@
   gap: var(--md);
   align-items: center;
 
-  .search {
-  }
-
   .sorting {
     display: flex;
     gap: var(--sm);
   }
 
-  .filtration {
+  .search {
+    min-width: 180px;
+    max-width: 300px;
+    flex: 1 1 auto;
+  }
+
+  .filtering {
+    display: flex;
+    gap: var(--sm);
+    margin-left: auto;
   }
 }

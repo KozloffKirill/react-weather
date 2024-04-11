@@ -14,7 +14,9 @@
   border-radius: 2px;
   background-color: var(--color-two);
   padding: 0;
-  transition: transform 0.1s linear, background-color 0.1s linear;
+  transition:
+    transform 0.1s linear,
+    background-color 0.1s linear;
 
   .arrowContainer {
     width: 10px;

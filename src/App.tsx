@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import sts from './App.module.css';
-import Header from './components/header/Header';
+import { Header } from './widgets/weather/header';
 
 const App: FC = () => {
   return (

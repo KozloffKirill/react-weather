@@ -1,0 +1,45 @@
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(2px);
+  height: 40px;
+  background-color: var(--color-five);
+  border-radius: 2px;
+  transition: background-color 0.1s linear;
+  box-sizing: border-box;
+  padding: var(--sm) var(--md) var(--sm) var(--sm);
+
+  .searchInput {
+    border: none;
+    width: 100%;
+    border: none;
+    color: var(--color-two);
+    text-overflow: ellipsis;
+    background-color: transparent;
+
+    &:focus {
+      outline: unset;
+    }
+
+    &::placeholder {
+      color: var(--color-two);
+      opacity: 0.5;
+    }
+  }
+
+  &:has(.searchInput:focus) {
+    background-color: white;
+  }
+
+  .clear {
+    display: inline-flex;
+
+    svg {
+      fill: var(--color-two);
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}

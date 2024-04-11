@@ -6,7 +6,7 @@ interface Props {
   up?: boolean;
 }
 
-const SortButton: FC<Props> = ({ up = false }) => {
+export const SortButton: FC<Props> = ({ up = false }) => {
   const [letterAbove, letterBelow] = up ? ['A', 'Я'] : ['Я', 'А'];
 
   return (
@@ -20,5 +20,3 @@ const SortButton: FC<Props> = ({ up = false }) => {
     </button>
   );
 };
-
-export default SortButton;
