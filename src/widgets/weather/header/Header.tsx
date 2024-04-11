@@ -4,7 +4,7 @@ import { Input } from '../../../shared/ui/input';
 import { Button } from '../../../shared/ui/button';
 import { SortButton } from '../../../features/weather/ui/sorting/SortButton';
 
-const Header: FC = () => {
+export const Header: FC = () => {
   const [search, setSearch] = useState<string>('');
 
   return (
@@ -26,5 +26,3 @@ const Header: FC = () => {
     </header>
   );
 };
-
-export default Header;
