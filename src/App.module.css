@@ -9,6 +9,10 @@
   --lg: 16px;
 }
 
+body {
+  background-color: var(--color-four);
+}
+
 .layout {
   display: flex;
   flex-direction: row;
