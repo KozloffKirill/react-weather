@@ -12,4 +12,16 @@
     display: flex;
     gap: var(--sm);
   }
+
+  .search {
+    min-width: 180px;
+    max-width: 300px;
+    flex: 1 1 auto;
+  }
+
+  .filtering {
+    display: flex;
+    gap: var(--sm);
+    margin-left: auto;
+  }
 }

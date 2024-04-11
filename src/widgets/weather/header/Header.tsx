@@ -1,8 +1,7 @@
 import React, { FC, useState } from 'react';
 import sts from './Header.module.css';
-import { Input } from '../../../shared/ui/input';
-import { Button } from '../../../shared/ui/button';
 import { SortButton } from '../../../features/weather/ui/sorting/SortButton';
+import { SearchInput } from '../../../features/weather/ui/search';
 
 export const Header: FC = () => {
   const [search, setSearch] = useState<string>('');
@@ -11,17 +10,24 @@ export const Header: FC = () => {
     <header className={sts.header}>
       <div className={sts.container}>
         <section className={sts.sorting}>
-          <Button>Кнопка</Button>
+          <SortButton />
           <SortButton up />
         </section>
-        <section>
-          <Input
+        <section className={sts.search}>
+          <SearchInput
             value={search}
             onChange={e => setSearch(e.target.value)}
             onClear={() => setSearch('')}
           />
         </section>
-        <section>Много фильтров много фильтров много фильтров</section>
+        <section className={sts.filtering}>
+          <SortButton up />
+          <SortButton up />
+          <SortButton up />
+          <SortButton up />
+          <SortButton up />
+          <SortButton up />
+        </section>
       </div>
     </header>
   );
