@@ -24,7 +24,7 @@ export const SearchInput: FC<Props> = ({ onClear, value, className, ...props }) 
         {...props}
       />
       <span
-        className={cn(sts.clear, value && sts.hidden)}
+        className={cn(sts.clear, !value && sts.hidden)}
         role="img"
         onClick={e => {
           onClear();
